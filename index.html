@@ -1,0 +1,288 @@
+<title>Pompompurin para Ro</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;600;700&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<div id="app">
+  <div class="dots" id="dots" aria-hidden="true"></div>
+
+  <div class="stage" id="stage">
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+    <svg id="scene" viewBox="0 0 260 250" role="img" aria-label="Pompompurin dormido al lado de su flan">
+
+      <ellipse cx="130" cy="238" rx="82" ry="8" fill="#E9D9B4" opacity=".55"/>
+
+      <g id="purin">
+        <g id="bob">
+
+          <path d="M130 38 C92 38 68 62 66 98 C50 120 44 154 56 184 C66 206 96 218 130 218 C164 218 194 206 204 184 C216 154 210 120 194 98 C192 62 168 38 130 38 Z"
+                fill="var(--purin)" stroke="var(--line)" stroke-width="3.6" stroke-linejoin="round"/>
+          <ellipse cx="130" cy="190" rx="46" ry="24" fill="var(--purin-lit)" opacity=".55"/>
+
+          <ellipse cx="104" cy="221" rx="17" ry="11.5" fill="var(--purin)" stroke="var(--line)" stroke-width="3.4"/>
+          <ellipse cx="156" cy="221" rx="17" ry="11.5" fill="var(--purin)" stroke="var(--line)" stroke-width="3.4"/>
+
+          <g id="head">
+
+            <g class="ear" id="earL">
+              <path d="M92 56 C56 52 24 84 24 120 C24 152 46 170 72 163 C84 159 79 133 75 108 C71 88 84 64 92 56 Z"
+                    fill="var(--purin)" stroke="var(--line)" stroke-width="3.6" stroke-linejoin="round"/>
+              <path d="M89 68 C60 66 34 94 34 120 C34 146 52 161 71 155 C79 152 76 132 73 110 C70 92 84 76 89 68 Z"
+                    fill="var(--purin-sh)" opacity=".24"/>
+            </g>
+            <g class="ear" id="earR">
+              <path d="M168 56 C204 52 236 84 236 120 C236 152 214 170 188 163 C176 159 181 133 185 108 C189 88 176 64 168 56 Z"
+                    fill="var(--purin)" stroke="var(--line)" stroke-width="3.6" stroke-linejoin="round"/>
+              <path d="M171 68 C200 66 226 94 226 120 C226 146 208 161 189 155 C181 152 184 132 187 110 C190 92 176 76 171 68 Z"
+                    fill="var(--purin-sh)" opacity=".24"/>
+            </g>
+
+            <path d="M126 34 C120 20 126 8 138 6 C147 5 149 12 142 16 C134 21 133 27 135 34 Z"
+                  fill="var(--beret)" stroke="var(--line)" stroke-width="3.2" stroke-linejoin="round"/>
+            <path d="M80 64 C80 38 102 28 130 28 C158 28 180 38 180 64 C180 75 157 81 130 81 C103 81 80 75 80 64 Z"
+                  fill="var(--beret)" stroke="var(--line)" stroke-width="3.6" stroke-linejoin="round"/>
+            <path d="M80 63 C93 72 167 72 180 63 C180 75 157 81 130 81 C103 81 80 75 80 63 Z" fill="var(--beret-dk)"/>
+            <path d="M98 46 C113 38 144 39 157 47" stroke="var(--beret-lit)" stroke-width="4" fill="none" stroke-linecap="round" opacity=".65"/>
+
+            <g id="eyesClosed">
+              <path d="M92 113 Q100 103 108 113" stroke="var(--eye)" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+              <path d="M152 113 Q160 103 168 113" stroke="var(--eye)" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+            </g>
+
+            <g id="eyesOpen" opacity="0">
+              <ellipse cx="100" cy="110" rx="6" ry="7.2" fill="var(--eye)"/>
+              <ellipse cx="160" cy="110" rx="6" ry="7.2" fill="var(--eye)"/>
+            </g>
+
+            <ellipse cx="130" cy="129" rx="10" ry="7" fill="var(--nose)"/>
+            <path d="M130 135 L130 143" stroke="var(--nose)" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M130 143 C129 153 118 160 109 156 C102 153 101 146 105 143" stroke="var(--nose)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+            <path d="M130 143 C131 153 142 160 151 156 C158 153 159 146 155 143" stroke="var(--nose)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <ellipse cx="84"  cy="180" rx="17" ry="12" transform="rotate(-24 84 180)" fill="var(--purin)" stroke="var(--line)" stroke-width="3.4"/>
+          <ellipse cx="176" cy="180" rx="17" ry="12" transform="rotate(24 176 180)" fill="var(--purin)" stroke="var(--line)" stroke-width="3.4"/>
+
+          <g id="held" opacity="0">
+            <rect x="98" y="150" width="64" height="44" rx="6" fill="var(--paper)" stroke="var(--line)" stroke-width="3.2"/>
+            <path d="M98 155 L130 178 L162 155" fill="none" stroke="var(--line)" stroke-width="3"/>
+            <circle cx="130" cy="180" r="8" fill="var(--blush)" stroke="var(--line)" stroke-width="2.4"/>
+          </g>
+        </g>
+      </g>
+
+      <g id="flan">
+        <ellipse cx="36" cy="231" rx="30" ry="7.5" fill="var(--plate)" stroke="var(--line)" stroke-width="3"/>
+        <path d="M20 210 L52 210 L58 227 C58 230 55 231 52 231 L20 231 C17 231 14 230 14 227 Z"
+              fill="var(--flan)" stroke="var(--line)" stroke-width="3.2" stroke-linejoin="round"/>
+        <path d="M20 210 C20 201 27 197 36 197 C45 197 52 201 52 210 C52 213 45 215 36 215 C27 215 20 213 20 210 Z"
+              fill="var(--caramel)" stroke="var(--line)" stroke-width="3.2" stroke-linejoin="round"/>
+        <path d="M36 191 C37 186 40 183 44 183" stroke="var(--line)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <circle cx="35" cy="193" r="6.5" fill="var(--cherry)" stroke="var(--line)" stroke-width="2.6"/>
+      </g>
+
+      <g id="zzz" aria-hidden="true">
+        <text x="192" y="40" font-size="15">z</text>
+        <text x="204" y="26" font-size="19">z</text>
+        <text x="218" y="12" font-size="23">z</text>
+      </g>
+
+      <g id="sparkles" aria-hidden="true">
+        <path d="M32 24 l3.4 8.6 8.6 3.4 -8.6 3.4 -3.4 8.6 -3.4 -8.6 -8.6 -3.4 8.6 -3.4 Z" fill="#F3C65F"/>
+        <path d="M234 52 l2.6 6.6 6.6 2.6 -6.6 2.6 -2.6 6.6 -2.6 -6.6 -6.6 -2.6 6.6 -2.6 Z" fill="var(--blush)"/>
+        <path d="M244 200 l2.2 5.6 5.6 2.2 -5.6 2.2 -2.2 5.6 -2.2 -5.6 -5.6 -2.2 5.6 -2.2 Z" fill="#F3C65F"/>
+      </g>
+    </svg>
+
+  </div>
+
+  <p class="hint" id="hint"></p>
+
+  <div class="meter" id="meter" aria-hidden="true"><i id="meterFill"></i></div>
+</div>
+
+
+<!-- EXTOS DE LA BARRITA DE ABAJO -->
+<div id="hints" hidden>
+  <span data-at="0"><span class="pulse">shhh... está en modo mimir 🤫 acariciálo</span></span>
+  <span data-at="12">👀 se despertó. seguí</span> 
+  <span data-at="40">🐾 buenos mimos, no pares</span>
+  <span data-at="72">😍 <span class="pulse">ahora te mira. no dejes de dar mimos</span></span>
+
+  <span data-at="fetch">🏃 esperá, fue a buscar algo</span>
+  <span data-at="brought">💌 te trajo algo</span>
+</div>
+
+
+<!-- EL BOTÓN QUE SE ESCAPA -->
+<!-- ============================================================
+     A DÓNDE VA LO QUE ELLA ESCRIBA
+
+     Por defecto abre WhatsApp con el mensaje ya tipeado y ella
+     solo toca enviar. Poné tu número en data-whatsapp con código
+     de país y sin + ni espacios (ej: 5491122334455). Si lo dejás
+     vacío, WhatsApp le pregunta a quién mandárselo.
+
+     Si preferís Google Forms: creá el formulario, pedile el link
+     de "obtener vínculo con relleno previo", y pegá acá ese link
+     cortado justo después de entry.NUMERO= (sin nada atrás).
+     Si data-form tiene algo, se usa eso en vez de WhatsApp.
+     ============================================================ -->
+<div id="destino"
+     data-whatsapp=""
+     data-form="https://docs.google.com/forms/d/e/1FAIpQLSdM4c_aH1k8K4wekD-KsX8SOtHJxzoC0vDI5ibSyHfzOaYzHw/viewform?usp=pp_url&amp;entry.614633961="
+     hidden></div>
+
+
+<div id="escapes" hidden>
+  <span>casi</span>
+  <span>nop</span>
+  <span>ni ahí</span>
+  <span>jaja no</span>
+  <span>probá de nuevo</span>
+  <span>que no</span>
+  <span>dale, decí que sí</span>
+</div>
+
+
+<!-- EL SOBRE -->
+<template id="tpl-envelope">
+  <div class="env-wrap">
+    <button class="envelope" aria-label="Abrir la carta">
+      <svg viewBox="0 0 300 206" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="30" width="292" height="172" rx="12" fill="#FFFCF4" stroke="#E8D6B4" stroke-width="3"/>
+        <path d="M4 42 L150 140 L296 42" fill="none" stroke="#EADCBD" stroke-width="3"/>
+        <path d="M7 196 L150 110 L293 196" fill="#FFF7E8" stroke="#EADCBD" stroke-width="2.5"/>
+        <path d="M4 44 L150 4 L296 44 L150 128 Z" fill="#FBE4A9" stroke="#E8CE91" stroke-width="3"/>
+        <circle cx="150" cy="106" r="24" fill="#F2A3AE"/>
+        <path d="M150 118 c-9 -6 -14 -11 -14 -17 a7 7 0 0 1 14 -3 a7 7 0 0 1 14 3 c0 6 -5 11 -14 17 Z" fill="#FFF7E8"/>
+      </svg>
+    </button>
+    <span class="env-cta">tocá para abrir</span>
+  </div>
+</template>
+
+
+<!-- LA CARTA  -->
+<template id="tpl-letter">
+  <div class="letter carousel" role="dialog" aria-label="La invitación">
+
+    <div class="viewport">
+      <div class="track">
+
+        <!-- 1. la presentación -->
+        <section class="slide">
+          <div class="body">
+            <h1>Ro,</h1>
+            <p class="sub">te prometí que íbamos a conseguir un pompompurin.</p>
+
+            <p class="intro">
+              En el BK no estaba. En el miniso hay, pero sale 50 lucas y siempre se lo lleva una clienta.<br>
+              Así que lo hice yo. <em>Este no se agota.</em>
+              (no tendrá licencia oficial pero bueno, trabajo honesto)
+            </p>
+
+            <p class="nudge">y ahora el plan →</p>
+          </div>
+        </section>
+
+        <!-- 2. el cafecito -->
+        <section class="slide">
+          <div class="body">
+            <img class="banner" src="imagenes/starbucks.jpeg" alt="Un vaso de Starbucks en la mano">
+            <span class="eyebrow">Etapa 1</span>
+            <h2>El cafecito</h2>
+            <span class="det">Starbucks, el sábado revocate mal cuando salgas y nos vamos a hacer los chetos. Ojo que es 31: último día de octubre, último día para reclamar el cafecito de cumpleaños. O lo canjeás ahora o se te vence. Muy buena excusa para vernos.</span>
+          </div>
+        </section>
+
+        <!-- 3. jobsbar -->
+        <section class="slide">
+          <div class="body">
+            <img class="banner" src="imagenes/jobs.jpg" alt="El salón de JobsBar con sus mesas largas">
+            <span class="eyebrow">Etapa 2</span>
+            <h2>JobsBar</h2>
+            <span class="det">Pool y jueguitos de mesa. Asi me ves manqueandola como un campeon en el pool (creo que no gane una partidita jamas en mi vida jaja lol). Y la mejor parte: hay sillas. Así tamos comodos y no apoyados en una baranda como dos jubilados (no, no te vas a poder hacer la alta meparece).</span>
+          </div>
+        </section>
+
+        <!-- 4. el centenario (suspendida) -->
+        <section class="slide">
+          <div class="body">
+            <img class="banner" src="imagenes/centenario.jpg" alt="El lago del Parque Centenario con los patos en la orilla">
+            <span class="eyebrow">Etapa 3 (suspendida)</span>
+            <h2>El Centenario</h2>
+            <span class="det">Los patitos y los peces van a tener que esperar. Pero quedan anotados pa la próxima ;)</span>
+          </div>
+        </section>
+
+        <!-- 5. la pregunta -->
+        <section class="slide">
+          <div class="body">
+            <p class="ask">¿vamos?</p>
+            <div class="answers">
+              <button class="ans primary" data-a="si">si y te pago con 1 guiño</button>
+
+              <div class="escape-zone">
+                <button class="ans secondary escapes" type="button">No</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <button class="nav prev" type="button" aria-label="Tarjeta anterior">‹</button>
+    <button class="nav next" type="button" aria-label="Tarjeta siguiente">›</button>
+
+    <div class="pager"></div>
+
+  </div>
+</template>
+
+
+<!-- LA RESPUESTA -->
+<template id="tpl-final">
+  <div class="letter final" role="dialog" aria-label="Respuesta">
+
+    <svg class="purinmini" viewBox="12 0 236 244" aria-hidden="true">
+      <path d="M130 38 C92 38 68 62 66 98 C50 120 44 154 56 184 C66 206 96 218 130 218 C164 218 194 206 204 184 C216 154 210 120 194 98 C192 62 168 38 130 38 Z" fill="#FAE7A0" stroke="#633D23" stroke-width="3.6" stroke-linejoin="round"/>
+      <ellipse cx="104" cy="221" rx="17" ry="11.5" fill="#FAE7A0" stroke="#633D23" stroke-width="3.4"/>
+      <ellipse cx="156" cy="221" rx="17" ry="11.5" fill="#FAE7A0" stroke="#633D23" stroke-width="3.4"/>
+      <path d="M92 56 C56 52 24 84 24 120 C24 152 46 170 72 163 C84 159 79 133 75 108 C71 88 84 64 92 56 Z" fill="#FAE7A0" stroke="#633D23" stroke-width="3.6" stroke-linejoin="round"/>
+      <path d="M168 56 C204 52 236 84 236 120 C236 152 214 170 188 163 C176 159 181 133 185 108 C189 88 176 64 168 56 Z" fill="#FAE7A0" stroke="#633D23" stroke-width="3.6" stroke-linejoin="round"/>
+      <path d="M126 34 C120 20 126 8 138 6 C147 5 149 12 142 16 C134 21 133 27 135 34 Z" fill="#A24E36" stroke="#633D23" stroke-width="3.2" stroke-linejoin="round"/>
+      <path d="M80 64 C80 38 102 28 130 28 C158 28 180 38 180 64 C180 75 157 81 130 81 C103 81 80 75 80 64 Z" fill="#A24E36" stroke="#633D23" stroke-width="3.6" stroke-linejoin="round"/>
+      <path d="M80 63 C93 72 167 72 180 63 C180 75 157 81 130 81 C103 81 80 75 80 63 Z" fill="#88402A"/>
+      <path d="M92 106 Q100 117 108 106" stroke="#39210F" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+      <path d="M152 106 Q160 117 168 106" stroke="#39210F" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+      <ellipse cx="130" cy="129" rx="10" ry="7" fill="#4A2C1B"/>
+      <path d="M130 135 L130 143" stroke="#4A2C1B" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M130 143 C129 153 118 160 109 156 C102 153 101 146 105 143" stroke="#4A2C1B" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M130 143 C131 153 142 160 151 156 C158 153 159 146 155 143" stroke="#4A2C1B" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="84" cy="180" rx="17" ry="12" transform="rotate(-24 84 180)" fill="#FAE7A0" stroke="#633D23" stroke-width="3.4"/>
+      <ellipse cx="176" cy="180" rx="17" ry="12" transform="rotate(24 176 180)" fill="#FAE7A0" stroke="#633D23" stroke-width="3.4"/>
+    </svg>
+
+    <div data-answer="si">
+      <p class="big">anotado ✍🏻</p>
+      <p class="msg">Un guiño y quedamos a mano.</p>
+
+      <div class="reply">
+        <label for="replyText">¿querés agregarme algo?</label>
+        <textarea id="replyText" rows="3" maxlength="400"
+                  placeholder="escribime lo que quieras..."></textarea>
+        <a class="send off" target="_blank" rel="noopener">mandámelo</a>
+        <p class="sent" hidden>listo ✨</p>
+      </div>
+    </div>
+
+
+  </div>
+</template>
+
+<script src="app.js"></script>
