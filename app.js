@@ -253,13 +253,66 @@
 
     texto.addEventListener('input', actualizar);
 
+    /* De la URL de relleno previo salen los datos para mandarlo
+       calladito, sin que ella tenga que ir al formulario:
+       .../viewform?...entry.123=   ->   .../formResponse  +  entry.123  */
+    var envioURL = '', campo = '';
+    if (form){
+      var base = form.match(/^(https:\/\/docs\.google\.com\/forms\/[^?]*?)\/viewform/);
+      var ent  = form.match(/(entry\.\d+)=\s*$/);
+      if (base && ent){
+        envioURL = base[1] + '/formResponse';
+        campo    = ent[1];
+      }
+    }
+
+    function mandarCallado(t){
+      var datos = new URLSearchParams();
+      datos.append(campo, t);
+      /* no-cors: el navegador manda el pedido pero no deja leer la
+         respuesta, así que esto confirma que salió, no que Google lo
+         haya aceptado. Si el visor lo bloquea, el fetch falla y ahí
+         caemos en abrir el formulario como antes.                   */
+      return fetch(envioURL, { method: 'POST', mode: 'no-cors', body: datos })
+        .then(function(){ return true; })
+        .catch(function(){ return false; });
+    }
+
+    var dejarPasar = false;
+
     enviar.addEventListener('click', function(e){
+      if (dejarPasar){ dejarPasar = false; return; }   /* el click de respaldo */
+
       if (!texto.value.trim()){
         e.preventDefault();
         texto.focus();
         return;
       }
-      if (aviso) aviso.hidden = false;
+
+      /* sin envío directo configurado, se abre el link de siempre */
+      if (!envioURL){
+        if (aviso) aviso.hidden = false;
+        return;
+      }
+
+      e.preventDefault();
+      enviar.classList.add('off');
+
+      mandarCallado(texto.value.trim()).then(function(salio){
+        enviar.classList.remove('off');
+
+        if (salio){
+          if (aviso) aviso.hidden = false;
+          texto.readOnly = true;
+          return;
+        }
+
+        /* lo bloquearon: abrimos el formulario con el texto cargado.
+           Acá no se avisa "listo", porque todavía le falta apretar
+           Enviar en la página de Google.                           */
+        dejarPasar = true;
+        enviar.click();
+      });
     });
 
     actualizar();
