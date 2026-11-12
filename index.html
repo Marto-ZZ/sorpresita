@@ -1,0 +1,320 @@
+<title>Una noche para Alba</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<div id="app">
+  <div class="dots" id="dots" aria-hidden="true"></div>
+
+  <div class="stage" id="stage">
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+    <svg id="scene" viewBox="0 0 260 260" role="img" aria-label="Samy, una caniche, durmiendo de noche">
+
+      <ellipse cx="130" cy="252" rx="80" ry="7" fill="#120D1E" opacity=".5"/>
+
+      <g id="samy">
+        <g id="bob">
+
+          <!-- la colita, detrás del cuerpo -->
+          <g id="colita">
+            <path d="M196.0 149.0 A5.5 5.5 0 0 1 206.3 152.5 A5.2 5.2 0 0 1 211.8 161.4 A5.1 5.1 0 0 1 209.9 171.5 A5.3 5.3 0 0 1 201.5 178.1 A5.5 5.5 0 0 1 190.5 178.1 A5.3 5.3 0 0 1 182.1 171.5 A5.1 5.1 0 0 1 180.2 161.4 A5.2 5.2 0 0 1 185.7 152.5 A5.5 5.5 0 0 1 196.0 149.0 Z"
+                  fill="var(--fur)" stroke="var(--line)" stroke-width="3.2" stroke-linejoin="round"/>
+          </g>
+
+          <!-- las patas, detrás del cuerpo -->
+          <path d="M98 194 C93 210 93 230 96 242 L119 242 C122 230 122 210 117 194 Z"
+                fill="var(--fur)" stroke="var(--line)" stroke-width="3.2" stroke-linejoin="round"/>
+          <path d="M143 194 C138 210 138 230 141 242 L164 242 C167 230 167 210 162 194 Z"
+                fill="var(--fur)" stroke="var(--line)" stroke-width="3.2" stroke-linejoin="round"/>
+
+          <!-- el cuerpo -->
+          <path d="M130.0 127.0 A11.4 11.4 0 0 1 149.9 130.2 A10.9 10.9 0 0 1 167.1 139.3 A10.0 10.0 0 0 1 179.2 153.1 A9.4 9.4 0 0 1 184.8 169.7 A9.2 9.2 0 0 1 182.9 186.9 A9.7 9.7 0 0 1 173.9 202.3 A10.5 10.5 0 0 1 159.0 214.0 A11.2 11.2 0 0 1 140.1 220.2 A11.5 11.5 0 0 1 119.9 220.2 A11.2 11.2 0 0 1 101.0 214.0 A10.5 10.5 0 0 1 86.1 202.3 A9.7 9.7 0 0 1 77.1 186.9 A9.2 9.2 0 0 1 75.2 169.7 A9.4 9.4 0 0 1 80.8 153.1 A10.0 10.0 0 0 1 92.9 139.3 A10.9 10.9 0 0 1 110.1 130.2 A11.4 11.4 0 0 1 130.0 127.0 Z"
+                fill="var(--fur)" stroke="var(--line)" stroke-width="3.6" stroke-linejoin="round"/>
+          <ellipse cx="130" cy="192" rx="35" ry="21" fill="var(--fur-lit)" opacity=".55"/>
+
+          <!-- las patitas -->
+          <ellipse cx="107" cy="243" rx="14.5" ry="9" fill="var(--fur)" stroke="var(--line)" stroke-width="3.2"/>
+          <ellipse cx="153" cy="243" rx="14.5" ry="9" fill="var(--fur)" stroke="var(--line)" stroke-width="3.2"/>
+
+          <g id="cabeza">
+
+            <!-- orejas, detrás de la cabeza -->
+            <g class="oreja" id="orejaIzq">
+              <path d="M76.0 85.0 A7.0 7.0 0 0 1 89.0 89.7 A8.3 8.3 0 0 1 98.5 102.5 A9.6 9.6 0 0 1 102.0 120.0 A9.6 9.6 0 0 1 98.5 137.5 A8.3 8.3 0 0 1 89.0 150.3 A7.0 7.0 0 0 1 76.0 155.0 A7.0 7.0 0 0 1 63.0 150.3 A8.3 8.3 0 0 1 53.5 137.5 A9.6 9.6 0 0 1 50.0 120.0 A9.6 9.6 0 0 1 53.5 102.5 A8.3 8.3 0 0 1 63.0 89.7 A7.0 7.0 0 0 1 76.0 85.0 Z"
+                    fill="var(--fur)" stroke="var(--line)" stroke-width="3.4" stroke-linejoin="round"/>
+              <path d="M71 100 A20 24 0 0 0 68 142" fill="none" stroke="var(--fur-sh)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+            </g>
+            <g class="oreja" id="orejaDer">
+              <path d="M184.0 85.0 A7.0 7.0 0 0 1 197.0 89.7 A8.3 8.3 0 0 1 206.5 102.5 A9.6 9.6 0 0 1 210.0 120.0 A9.6 9.6 0 0 1 206.5 137.5 A8.3 8.3 0 0 1 197.0 150.3 A7.0 7.0 0 0 1 184.0 155.0 A7.0 7.0 0 0 1 171.0 150.3 A8.3 8.3 0 0 1 161.5 137.5 A9.6 9.6 0 0 1 158.0 120.0 A9.6 9.6 0 0 1 161.5 102.5 A8.3 8.3 0 0 1 171.0 89.7 A7.0 7.0 0 0 1 184.0 85.0 Z"
+                    fill="var(--fur)" stroke="var(--line)" stroke-width="3.4" stroke-linejoin="round"/>
+              <path d="M189 100 A20 24 0 0 1 192 142" fill="none" stroke="var(--fur-sh)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+            </g>
+
+            <!-- la cabeza -->
+            <path d="M130.0 58.0 A11.6 11.6 0 0 1 149.9 61.8 A11.1 11.1 0 0 1 166.4 72.6 A10.4 10.4 0 0 1 176.6 88.4 A10.0 10.0 0 0 1 178.7 106.6 A10.1 10.1 0 0 1 172.4 124.0 A10.7 10.7 0 0 1 158.8 137.6 A11.4 11.4 0 0 1 140.2 145.0 A11.6 11.6 0 0 1 119.8 145.0 A11.4 11.4 0 0 1 101.2 137.6 A10.7 10.7 0 0 1 87.6 124.0 A10.1 10.1 0 0 1 81.3 106.6 A10.0 10.0 0 0 1 83.4 88.4 A10.4 10.4 0 0 1 93.6 72.6 A11.1 11.1 0 0 1 110.1 61.8 A11.6 11.6 0 0 1 130.0 58.0 Z"
+                  fill="var(--fur)" stroke="var(--line)" stroke-width="3.6" stroke-linejoin="round"/>
+
+            <!-- el copete -->
+            <path d="M130.0 51.0 A10.7 10.7 0 0 1 147.7 55.1 A6.3 6.3 0 0 1 155.0 65.0 A6.3 6.3 0 0 1 147.7 74.9 A10.7 10.7 0 0 1 130.0 79.0 A10.7 10.7 0 0 1 112.3 74.9 A6.3 6.3 0 0 1 105.0 65.0 A6.3 6.3 0 0 1 112.3 55.1 A10.7 10.7 0 0 1 130.0 51.0 Z"
+                  fill="var(--fur)" stroke="var(--line)" stroke-width="3.4" stroke-linejoin="round"/>
+
+            <!-- el hocico -->
+            <ellipse cx="130" cy="122" rx="23" ry="17" fill="var(--muzzle)"/>
+
+            <g id="ojosCerrados">
+              <path d="M104 96 Q111 88 118 96" stroke="var(--eye)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+              <path d="M142 96 Q149 88 156 96" stroke="var(--eye)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+            </g>
+
+            <g id="ojosAbiertos" opacity="0">
+              <ellipse cx="111" cy="93" rx="6.4" ry="7.2" fill="var(--eye)"/>
+              <ellipse cx="149" cy="93" rx="6.4" ry="7.2" fill="var(--eye)"/>
+              <circle cx="113" cy="90.5" r="1.9" fill="#FFFDF8"/>
+              <circle cx="151" cy="90.5" r="1.9" fill="#FFFDF8"/>
+            </g>
+
+            <!-- nariz y boca -->
+            <path d="M120 109 C120 103 140 103 140 109 C140 116 134 119 130 119 C126 119 120 116 120 109 Z" fill="var(--nose)"/>
+            <path d="M130 119 L130 126" stroke="var(--nose)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M130 126 C129 134 120 139 113 135 C108 132 107 127 110 124" stroke="var(--nose)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M130 126 C131 134 140 139 147 135 C152 132 153 127 150 124" stroke="var(--nose)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- el collar negro, como el de la foto -->
+          <path d="M101 143 Q130 161 159 143" stroke="var(--collar)" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <rect x="123" y="149" width="14" height="11" rx="2.5" fill="var(--buckle)" stroke="var(--line)" stroke-width="2"/>
+
+          <!-- el librito que trae -->
+          <g id="trae" opacity="0">
+            <rect x="96" y="168" width="68" height="48" rx="5" fill="var(--coral)" stroke="var(--line)" stroke-width="3.2"/>
+            <rect x="104" y="175" width="52" height="34" rx="2" fill="var(--paper)" stroke="var(--line)" stroke-width="2.2"/>
+            <path d="M112 186 h36 M112 194 h36 M112 202 h24" stroke="#D9C5A9" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M150 168 v16 l-5 -5 -5 5 v-16 Z" fill="var(--gold)" stroke="var(--line)" stroke-width="2"/>
+          </g>
+        </g>
+      </g>
+
+      <g id="zzz" aria-hidden="true">
+        <text x="196" y="44" font-size="15">z</text>
+        <text x="208" y="30" font-size="19">z</text>
+        <text x="222" y="14" font-size="23">z</text>
+      </g>
+
+      <g id="chispas" aria-hidden="true">
+        <path d="M30 40 l3.4 8.6 8.6 3.4 -8.6 3.4 -3.4 8.6 -3.4 -8.6 -8.6 -3.4 8.6 -3.4 Z" fill="var(--gold)"/>
+        <path d="M232 70 l2.6 6.6 6.6 2.6 -6.6 2.6 -2.6 6.6 -2.6 -6.6 -6.6 -2.6 6.6 -2.6 Z" fill="var(--coral)"/>
+        <path d="M242 206 l2.2 5.6 5.6 2.2 -5.6 2.2 -2.2 5.6 -2.2 -5.6 -5.6 -2.2 5.6 -2.2 Z" fill="var(--gold)"/>
+      </g>
+    </svg>
+
+  </div>
+
+  <p class="hint" id="hint"></p>
+
+  <div class="meter" id="meter" aria-hidden="true"><i id="meterFill"></i></div>
+</div>
+
+
+<!-- ============================================================
+     A DÓNDE VA LO QUE ELLA ESCRIBA
+     Por defecto abre WhatsApp con el mensaje ya tipeado. Poné tu
+     número en data-whatsapp (código de país, sin + ni espacios).
+     Si querés un Google Forms, pegá en data-form el link de
+     relleno previo cortado después de entry.NUMERO=
+     ============================================================ -->
+<div id="destino"
+     data-whatsapp=""
+     data-form="https://docs.google.com/forms/d/e/1FAIpQLSdM4c_aH1k8K4wekD-KsX8SOtHJxzoC0vDI5ibSyHfzOaYzHw/viewform?usp=pp_url&amp;entry.614633961="
+     hidden></div>
+
+
+<!-- ============================================================
+     TEXTOS DE LA BARRITA DE ABAJO
+     data-at = a partir de qué % de la barra se muestra cada uno.
+     ============================================================ -->
+<div id="hints" hidden>
+  <span data-at="0"><span class="pulse">shhh... Samy está durmiendo. acariciála 🤫</span></span>
+  <span data-at="12">👀 se despertó. seguí</span>
+  <span data-at="40">🐾 se hace la odiosa, pero mirá</span>
+  <span data-at="72">😍 <span class="pulse">bueno, tanto no lo odiaba</span></span>
+
+  <span data-at="fetch">🏃 esperá, fue a buscar algo</span>
+  <span data-at="brought">📖 te trajo esto...</span>
+</div>
+
+
+<!-- ============================================================
+     EL BOTÓN QUE SE ESCAPA
+     ============================================================ -->
+<div id="escapes" hidden>
+  <span>casi</span>
+  <span>nop</span>
+  <span>ni ahí</span>
+  <span>JAKAJAJA no</span>
+  <span>probá de nuevo</span>
+  <span>que no</span>
+  <span>dale que ya dijiste que sí</span>
+</div>
+
+
+<!-- ============================================================
+     EL LIBRITO QUE TRAE SAMY
+     ============================================================ -->
+<template id="tpl-libro">
+  <div class="libro-wrap">
+    <button class="libro" aria-label="Abrir el librito">
+      <svg viewBox="0 0 220 282" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="200" height="262" rx="10" fill="#B94F39"/>
+        <rect x="10" y="10" width="200" height="262" rx="10" fill="none" stroke="#4A3326" stroke-width="5"/>
+        <rect x="22" y="22" width="176" height="238" rx="5" fill="none" stroke="#E8B45C" stroke-width="2.5" opacity=".8"/>
+        <path d="M34 10 v70 l-11 -11 -11 11 v-70 Z" fill="#E8B45C" stroke="#4A3326" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M70 120 h80 M70 140 h80 M84 162 h52" stroke="#E8B45C" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+        <circle cx="110" cy="200" r="20" fill="none" stroke="#E8B45C" stroke-width="3.5" opacity=".9"/>
+        <path d="M110 190 l3.6 7.3 8 1.2 -5.8 5.7 1.4 8 -7.2 -3.8 -7.2 3.8 1.4 -8 -5.8 -5.7 8 -1.2 Z" fill="#E8B45C"/>
+      </svg>
+    </button>
+    <span class="libro-cta">tocá para abrir</span>
+  </div>
+</template>
+
+
+<!-- ============================================================
+     LA CARTA — todo el texto de la invitación.
+     Cada <section class="slide"> es una tarjeta del carrusel.
+     Para agregar una etapa, copiá una section entera: el puntito
+     de abajo y las flechas se acomodan solos.
+     ============================================================ -->
+<template id="tpl-letter">
+  <div class="letter carousel" role="dialog" aria-label="La invitación">
+
+    <div class="viewport">
+      <div class="track">
+
+        <!-- ---------- 1. la presentación ---------- -->
+        <section class="slide">
+          <div class="body">
+            <h1>Alba,</h1>
+            <p class="sub">esto te lo trajo Samy. no preguntes cómo hizo.</p>
+
+            <p class="intro">
+              Vos decís que no leés mentes. <br>
+              Listo: no hace falta, está todo escrito acá.<br>
+              <em>(Bien formal y en prosa, y eso que de los dos, a la que le gusta escribir sos vos)</em>
+            </p>
+
+            <p class="nudge">y ahora el plan →</p>
+          </div>
+        </section>
+
+        <!-- ---------- 2. el heladito ---------- -->
+        <section class="slide">
+          <div class="body">
+            <img class="banner" src="imagenes/luccianos.jpg" width="320" height="200" decoding="async"
+                 alt="Lucciano's de Puerto Madero">
+            <span class="eyebrow">Etapa 1 — 18:00</span>
+            <h2>Lucciano's, Puerto Madero</h2>
+            <span class="det">Te invito un heladito, aunque me hayas bardeado los gustos. <br>
+              Crema oreo, tiramisú y banana split, tenés los tres. Yo voy a pedir chocolate y te lo vas a tener que bancar.</span>
+          </div>
+        </section>
+
+        <!-- ---------- 3. el paseo ---------- -->
+        <section class="slide">
+          <div class="body">
+            <img class="banner" src="imagenes/puente.jpg" width="320" height="200" decoding="async"
+                 alt="El Puente de la Mujer en Puerto Madero">
+            <span class="eyebrow">Etapa 2</span>
+            <h2>Paseo bien tranki</h2>
+            <span class="det">Caminar por la zona, mirar el agua y seguir la charla sin apuro. Preguntaste si iba a hacer calor: a las seis y al lado del río, no. <br>
+            Si me equivoco te debo otro helado.</span>
+          </div>
+        </section>
+
+        <!-- ---------- 4. la noche de los museos ---------- -->
+        <section class="slide">
+          <div class="body">
+            <img class="banner" src="imagenes/museos.jpg" width="320" height="200" decoding="async"
+                 alt="La Noche de los Museos en Buenos Aires">
+            <span class="eyebrow">Etapa 3 — (a partir de las 19:00)</span>
+            <h2>La Noche de los Museos</h2>
+            <span class="det">Abre a las 19 y cierra a las 2 de la mañana, claramente la abuela que se duerme temprano no va a llegar a las 2 con los ojos abiertos. 
+            <br> O sea que el helado a las 18 es cálculo, no casualidad (el pibe exactas cuando no calculando todo). La ruta la vamos eligiendo sobre la marcha, total la ciudad se presta para pasear.</span>
+          </div>
+        </section>
+
+        <!-- ---------- 5. la pregunta ---------- -->
+        <section class="slide">
+          <div class="body">
+            <p class="ask">¿vamos?</p>
+            <div class="answers">
+              <button class="ans primary" data-a="si">dale, pero sin chocolate</button>
+
+              <!-- sin data-a a propósito: no es una respuesta, se escapa -->
+              <div class="escape-zone">
+                <button class="ans secondary escapes" type="button">No</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <button class="nav prev" type="button" aria-label="Tarjeta anterior">‹</button>
+    <button class="nav next" type="button" aria-label="Tarjeta siguiente">›</button>
+
+    <div class="pager"></div>
+
+  </div>
+</template>
+
+
+<!-- ============================================================
+     LA RESPUESTA
+     ============================================================ -->
+<template id="tpl-final">
+  <div class="letter final" role="dialog" aria-label="Respuesta">
+
+    <svg class="samymini" viewBox="30 30 200 226" aria-hidden="true">
+      <path d="M196.0 149.0 A5.5 5.5 0 0 1 206.3 152.5 A5.2 5.2 0 0 1 211.8 161.4 A5.1 5.1 0 0 1 209.9 171.5 A5.3 5.3 0 0 1 201.5 178.1 A5.5 5.5 0 0 1 190.5 178.1 A5.3 5.3 0 0 1 182.1 171.5 A5.1 5.1 0 0 1 180.2 161.4 A5.2 5.2 0 0 1 185.7 152.5 A5.5 5.5 0 0 1 196.0 149.0 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.2" stroke-linejoin="round"/>
+      <path d="M98 194 C93 210 93 230 96 242 L119 242 C122 230 122 210 117 194 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.2" stroke-linejoin="round"/>
+      <path d="M143 194 C138 210 138 230 141 242 L164 242 C167 230 167 210 162 194 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.2" stroke-linejoin="round"/>
+      <path d="M130.0 127.0 A11.4 11.4 0 0 1 149.9 130.2 A10.9 10.9 0 0 1 167.1 139.3 A10.0 10.0 0 0 1 179.2 153.1 A9.4 9.4 0 0 1 184.8 169.7 A9.2 9.2 0 0 1 182.9 186.9 A9.7 9.7 0 0 1 173.9 202.3 A10.5 10.5 0 0 1 159.0 214.0 A11.2 11.2 0 0 1 140.1 220.2 A11.5 11.5 0 0 1 119.9 220.2 A11.2 11.2 0 0 1 101.0 214.0 A10.5 10.5 0 0 1 86.1 202.3 A9.7 9.7 0 0 1 77.1 186.9 A9.2 9.2 0 0 1 75.2 169.7 A9.4 9.4 0 0 1 80.8 153.1 A10.0 10.0 0 0 1 92.9 139.3 A10.9 10.9 0 0 1 110.1 130.2 A11.4 11.4 0 0 1 130.0 127.0 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.6" stroke-linejoin="round"/>
+      <ellipse cx="107" cy="243" rx="14.5" ry="9" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.2"/>
+      <ellipse cx="153" cy="243" rx="14.5" ry="9" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.2"/>
+      <path d="M76.0 85.0 A7.0 7.0 0 0 1 89.0 89.7 A8.3 8.3 0 0 1 98.5 102.5 A9.6 9.6 0 0 1 102.0 120.0 A9.6 9.6 0 0 1 98.5 137.5 A8.3 8.3 0 0 1 89.0 150.3 A7.0 7.0 0 0 1 76.0 155.0 A7.0 7.0 0 0 1 63.0 150.3 A8.3 8.3 0 0 1 53.5 137.5 A9.6 9.6 0 0 1 50.0 120.0 A9.6 9.6 0 0 1 53.5 102.5 A8.3 8.3 0 0 1 63.0 89.7 A7.0 7.0 0 0 1 76.0 85.0 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.4" stroke-linejoin="round"/>
+      <path d="M184.0 85.0 A7.0 7.0 0 0 1 197.0 89.7 A8.3 8.3 0 0 1 206.5 102.5 A9.6 9.6 0 0 1 210.0 120.0 A9.6 9.6 0 0 1 206.5 137.5 A8.3 8.3 0 0 1 197.0 150.3 A7.0 7.0 0 0 1 184.0 155.0 A7.0 7.0 0 0 1 171.0 150.3 A8.3 8.3 0 0 1 161.5 137.5 A9.6 9.6 0 0 1 158.0 120.0 A9.6 9.6 0 0 1 161.5 102.5 A8.3 8.3 0 0 1 171.0 89.7 A7.0 7.0 0 0 1 184.0 85.0 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.4" stroke-linejoin="round"/>
+      <path d="M130.0 58.0 A11.6 11.6 0 0 1 149.9 61.8 A11.1 11.1 0 0 1 166.4 72.6 A10.4 10.4 0 0 1 176.6 88.4 A10.0 10.0 0 0 1 178.7 106.6 A10.1 10.1 0 0 1 172.4 124.0 A10.7 10.7 0 0 1 158.8 137.6 A11.4 11.4 0 0 1 140.2 145.0 A11.6 11.6 0 0 1 119.8 145.0 A11.4 11.4 0 0 1 101.2 137.6 A10.7 10.7 0 0 1 87.6 124.0 A10.1 10.1 0 0 1 81.3 106.6 A10.0 10.0 0 0 1 83.4 88.4 A10.4 10.4 0 0 1 93.6 72.6 A11.1 11.1 0 0 1 110.1 61.8 A11.6 11.6 0 0 1 130.0 58.0 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.6" stroke-linejoin="round"/>
+      <path d="M130.0 51.0 A10.7 10.7 0 0 1 147.7 55.1 A6.3 6.3 0 0 1 155.0 65.0 A6.3 6.3 0 0 1 147.7 74.9 A10.7 10.7 0 0 1 130.0 79.0 A10.7 10.7 0 0 1 112.3 74.9 A6.3 6.3 0 0 1 105.0 65.0 A6.3 6.3 0 0 1 112.3 55.1 A10.7 10.7 0 0 1 130.0 51.0 Z" fill="#F7F2E8" stroke="#4B4239" stroke-width="3.4" stroke-linejoin="round"/>
+      <ellipse cx="130" cy="122" rx="23" ry="17" fill="#EFE7D6"/>
+      <path d="M104 91 Q111 100 118 91" stroke="#2A2522" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <path d="M142 91 Q149 100 156 91" stroke="#2A2522" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <path d="M120 109 C120 103 140 103 140 109 C140 116 134 119 130 119 C126 119 120 116 120 109 Z" fill="#2E2A28"/>
+      <path d="M130 119 L130 126" stroke="#2E2A28" stroke-width="3" stroke-linecap="round"/>
+      <path d="M130 126 C129 134 120 139 113 135 C108 132 107 127 110 124" stroke="#2E2A28" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M130 126 C131 134 140 139 147 135 C152 132 153 127 150 124" stroke="#2E2A28" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M101 143 Q130 161 159 143" stroke="#2E2C31" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <rect x="123" y="149" width="14" height="11" rx="2.5" fill="#B6BAC0" stroke="#4B4239" stroke-width="2"/>
+    </svg>
+
+    <div data-answer="si">
+      <p class="big">nos vemos el sábado</p>
+      <p class="msg">Sábado 14, seis de la tarde. Te escribo para arreglar dónde nos encontramos. 
+        <br> No seré psicólogo, pero espero haberte leído la mente con este plancito.</p>
+
+      <div class="reply">
+        <label for="replyText">¿querés agregarme algo?</label>
+        <textarea id="replyText" rows="3" maxlength="400"
+                  placeholder="escribime lo que quieras..."></textarea>
+        <a class="send off" target="_blank" rel="noopener">mandámelo</a>
+        <p class="sent" hidden>listo ✨</p>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script src="app.js"></script>

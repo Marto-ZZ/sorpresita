@@ -1,0 +1,10 @@
+default/
+
+
+conversacion_*.html
+historial/
+Historial/
+
+Thumbs.db
+desktop.ini
+.DS_Store
